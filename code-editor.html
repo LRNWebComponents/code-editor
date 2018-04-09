@@ -117,13 +117,6 @@ A LRN element
           value: '16px',
         },
         /**
-         * Scroll into view.
-         */
-        scrollIntoView: {
-          type: Boolean,
-          value: true,
-        },
-        /**
          * Min lines of the editor to show
          */
         minLines: {
@@ -154,7 +147,6 @@ A LRN element
         this.__editorReady = true;
         setTimeout( () => {
           this.$.codeeditor.editor.setOptions({
-              autoScrollEditorIntoView: this.scrollIntoView,
               maxLines: this.maxLines,
               minLines: this.minLines
           });
