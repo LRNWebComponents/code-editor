@@ -24,6 +24,7 @@ A LRN element
         display: block;
         padding: 16px;
         --code-pen-button-color: #222222;
+        --code-pen-title-color: #222222;
       }
       .code-pen-container {
         width: 100%;
@@ -35,8 +36,11 @@ A LRN element
         float: right;
         height: 40px;
       }
+      h3 {
+        color: var(--code-pen-title-color);
+      }
     </style>
-    <h2>[[title]]</h2>
+    <h3>[[title]]</h3>
     <juicy-ace-editor id="codeeditor" theme$="[[theme]]" mode$="[[mode]]" font-size$="[[fontSize]]" readonly$="[[readOnly]]"></juicy-ace-editor>
     <div class="code-pen-container" hidden$="[[!showCodePen]]">
       <code-pen-button data="[[codePenData]]"></code-pen-button>
